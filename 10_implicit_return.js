@@ -129,7 +129,7 @@ const getFailingGrades = (grades) => {
   })
 }
 // 6. getRaisedGrades should return all the grades raised by 1 (grades should not exceed 20)
-const getRiasedGrades = (grade) => {
+const getRiasedGrades = (grades) => {
   return grades.map((grade) => {
     if (grade + 1 > 20) {
       return 20
