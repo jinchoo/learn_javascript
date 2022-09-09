@@ -1,4 +1,4 @@
-//Assuming a variable name, here's an example of object shorthand: cosnt user = {name}.
+//Assuming a variable name, here's an example of object shorthand: const user = {name}.
 //const user = [age} is equivalent to const user = {age: age}.
 // When you have several console.log calls, wrap the values with {} so that you use object shorthand. The benefit is that you will be able to see the name of the variable that you were trying to log, alongside its value.
 
@@ -29,7 +29,7 @@ const getProduct = (a, b) => {
 
 getProduct(2, 3) // {a: 2, b: 3} {product: 6}
 
-// Destructruing & Concatenation
+// Destructuring & Concatenation
 
 //Just like array destructuring, you can destructure key/value pairs (nested objects) from an object.
 //This concept is similar, except that you have to {} instead of [] on the left side of the = operator and you should have an object on the right side of the = operator.
@@ -39,7 +39,7 @@ const config = {
   isAdmin: false,
   theme: {
     dark: false,
-    accessiblity: true,
+    accessibility: true,
   },
 }
 
@@ -53,9 +53,9 @@ const theme = config.theme
 
 const { id, isAdmin, theme } = config
 
-// This new id varaiable is created from config.id.  So, the variable names should match the key names.
+// This new id variable is created from config.id.  So, the variable names should match the key names.
 
-// You can also decide to only destructure the varaibles you need:
+// You can also decide to only destructure the variable you need:
 
 const { isAdmin, theme } = config
 
@@ -63,7 +63,7 @@ const { isAdmin, theme } = config
 
 // Destructuring with default value
 
-// It's also possible to destructure with a default value, meaning that you can assign a default value to a property if it does not exist in the object you're destructruing from:
+// It's also possible to destructure with a default value, meaning that you can assign a default value to a property if it does not exist in the object you're destructuring from:
 
 const user = {
   id: 1,
@@ -84,13 +84,13 @@ const user = {
 const { name, isAdmin = false } = user
 console.log(isAdmin) // true
 
-// Example above, it did not default to false becasue it exists on user so it just gets destructured.
+// Example above, it did not default to false because it exists on user so it just gets destructured.
 
-// Destrucure and rename
-// It's also possible to destructure and remanme from an object.
+// Destructure and rename
+// It's also possible to destructure and rename from an object.
 //Let's say you already have a ame variable so you'd like to destructure user.name and assign it to a variable called userName.
 
-const name = 'Document title' // name varaible is already decleared
+const name = 'Document title' // name variable is already declared
 
 const user = {
   id: 1,
@@ -98,7 +98,7 @@ const user = {
   isAdmin: true,
 }
 
-// destructure user.name into varaible userName
+// destructure user.name into variable userName
 const { name: userName, isAdmin } = user
 console.log(userName) // 'Sam'
 
@@ -110,7 +110,7 @@ const user = {
   isAdmin: true,
 }
 
-// destructure user.name into varaible userName
+// destructure user.name into variable userName
 const { name: userName, isAdmin } = user
 console.log(userName) // 'Sam'
 
@@ -128,7 +128,7 @@ console.log(admin) // true
 
 // Concatenate objects
 
-// In some scenarios, you'd like to merge 2 objects together.  You can do that using the ...sperad operator.
+// In some scenarios, you'd like to merge 2 objects together.  You can do that using the ...spread operator.
 
 const firstPerson = {
   name: 'Sam',
@@ -165,7 +165,7 @@ console.log(getLatLng(userLocation))
 //The latitude is 24.235235 and the longitude is 2.5734.
 
 const getLatLngElevation = (userLocation) => {
-  //destrcutre into 3 variables: lat, lng & elevation (defaulting to 0)
+  //destructure into 3 variables: lat, lng & elevation (defaulting to 0)
   const { lat, lng, elevation = 0 } = userLocation
 
   retturn`The latitude is ${lat}, the longitude is ${lng} and the elevation is ${elevation} meters`
@@ -184,7 +184,7 @@ console.log(getLatLngElevation(userLocation))
 
 // Assuming a variable name, here's an example of object shorthand: const user = {name}.
 // const user = {age} is equivalent to const user = {age: age}.
-// When you have several console.log calls, wrap the values with {} so that you use object shorthand.  The benefit is that you will be able to see the name of the varaible that you were trying to log, alongside its value.
-// Just like array dstructruing, you can destructure key/value pairs (or nested objects) from an object
+// When you have several console.log calls, wrap the values with {} so that you use object shorthand.  The benefit is that you will be able to see the name of the variable that you were trying to log, alongside its value.
+// Just like array destructuring, you can destructure key/value pairs (or nested objects) from an object
 // It's also possible to destructure with a default value, meaning that you can assign a default value to a property if it does not exist in the object you're destructuring from.
 // You can merge objects together with the ... spread operator.  The order of objects matters(for duplicate keys).
