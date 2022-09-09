@@ -109,14 +109,14 @@ numbers.reduce((total, current) => {
   return total + current
 }, 0)
 
-//The reduce() method is used to calcuate a single value from an array.
-// In other terms, the reduce() method redcues an array into a single value
+//The reduce() method is used to calculate a single value from an array.
+// In other terms, the reduce() method reduce an array into a single value
 // The most common use cases fo reduce (when working with arrays of numbers) are sum & multiplication.
 // The reduce() method takes a reducer which allows you to configure the logic of how the array will be reduced into a single number.
-//The reduce() method takes 2 parameters: reducer and initialValue. .reduce(redcuer, initialValue)
-// The initalValue is always 0 for sum
-// The reducer is a callback funciton that recives 2 parameters: total and current.
-// Thet total (also called accumlator) keeps track of the result of the reduce method.  Fore example, when claculating the sum, it keeps track of the sum, step by step.
+//The reduce() method takes 2 parameters: reducer and initialValue. .reduce(reducer, initialValue)
+// The initialValue is always 0 for sum
+// The reducer is a callback function that receives 2 parameters: total and current.
+// The total (also called accumulator) keeps track of the result of the reduce method.  Fore example, when calculating the sum, it keeps track of the sum, step by step.
 // The current represents one item of the array
-// The reducer is called for every item in the arry
-// For multiplicaiton, we use an initialValue of 1
+// The reducer is called for every item in the array
+// For multiplication, we use an initialValue of 1
